@@ -1,7 +1,5 @@
-/* project 4 css changes:
-added pirate theme
-added theme button
-changed things slightly to fit a mobile size better
+/* project 5 css changes:
+added form css and styling for elements inside
 */
 
 :root {
@@ -192,4 +190,24 @@ h1 {
   .about-container {
     margin: 0px;
   }
+}
+
+#visitor-form {
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  right: 30px;
+  bottom: 3%;
+  border-radius: 10px;
+  border: black;
+  padding: 15px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.leftlabel {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding: 5px;
 }

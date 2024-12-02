@@ -1,3 +1,4 @@
+<!-- Project 5: added form -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,10 +10,69 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="js/index.js"></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/validate.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <div id="visitor-form">
+      <form id="visitor-incomplete">
+        <label for="First_Name" class="leftlabel">First Name</label>
+        <input type="text" name="first_name" id="First_name" />
+        <br />
+        <label for="Last_Name" class="leftlabel">Last Name</label>
+        <input type="text" name="last_name" id="Last_name" />
+        <br />
+        <label for="Address" class="leftlabel">Address</label>
+        <input type="text" name="address" id="Address" />
+        <br />
+        <label for="City" class="leftlabel">City</label>
+        <input type="text" name="city" id="City" />
+        <br />
+        <label for="State" class="leftlabel">State</label>
+        <input type="text" name="state" id="State" />
+        <br />
+        <label for="Zip" class="leftlabel">Zip</label>
+        <input type="text" name="zip_code" id="Zip" />
+        <br />
+        <label for="Phone" class="leftlabel">Cell Phone</label>
+        <input type="text" name="phone" id="Phone" />
+        <br />
+        <label for="Email" class="leftlabel">Email Address</label>
+        <input type="text" name="email" id="Email" />
+        <br />
+        <br />
+        <form action="">
+          <label for="FindWebsite">How did you find my website?</label>
+          <br />
+          <input type="radio" name="find" id="Internet" value="Internet" />
+          <label for="Internet">Internet</label>
+          <br />
+          <input type="radio" name="find" id="Myspace" value="Myspace" />
+          <label for="Myspace">Myspace</label>
+          <br />
+          <input type="radio" name="find" id="Google" value="Google" />
+          <label for="Google">Google</label>
+          <br />
+          <input type="radio" name="find" id="Friend" value="Friend" />
+          <label for="Friend">Friend</label>
+          <br />
+          <input type="radio" name="find" id="Newspaper" value="Newspaper" />
+          <label for="Newspaper">Newspaper</label>
+          <br />
+          <input type="radio" name="find" id="Owner" value="Owner" />
+          <label for="Owner">I am the owner of this site</label>
+        </form>
+
+        <br />
+        <label for="feedback">Comments</label>
+        <input type="text" name="feedback" id="Feedback" />
+        <br />
+        <br />
+        <button id="submitButton" type="submit">Submit</button>
+      </form>
+      <div class="visitor-complete"></div>
+    </div>
     <div class="full-site">
       <div class="header">
         <div class="logo"><img src="img/cat_logo.png" alt="" /></div>
